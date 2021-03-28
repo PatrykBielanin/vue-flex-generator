@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex generator</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+    * {
+      font-family: 'Roboto', sans-serif;
+      transition: .25s;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .background {
+      position: absolute;
+      background-color: rgb(17, 17, 17);
+      display: block;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    @media (max-width: 960px) {
+      .background {
+        height: 200% !important;
+      }
+    }
+
+    /* body {
+      background: #643E46FF;
+    } */
+  </style>
+</head>
+
+<body>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+
+  <canvas class="background"></canvas>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+  <script>
+    window.onload = function () {
+      Particles.init({
+        selector: '.background',
+        color: ['#404B69', '#DBEDF3'],
+        connectParticles: true,
+        responsive: [{
+          breakpoint: 960,
+          options: {
+            display: 'none',
+            maxParticles: 80,
+            connectParticles: false
+          }
+        }]
+      });
+    };
+
+  </script>
+</body>
+
+</html>
