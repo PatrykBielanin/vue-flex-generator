@@ -101,6 +101,8 @@
             </div>
         </div>
 
+        <p class="footer">visit <span style="color: orange;"><a href="https://github.com/PatrykBielanin/vue-flex-generator" target="_blank">GitHub</a></span></p>
+
         <div v-if="modalStatus" class="modal">
             <button @click="toggleCloseModal()">Close modal</button>
             <section class="html">
@@ -203,12 +205,12 @@
         color: white;
         p{
             margin-top: -10px;
-
-            a{
-                color: inherit;
-                text-decoration: none;
-            }
         }
+    }
+
+    a{
+        color: inherit;
+        text-decoration: none;
     }
 
     .wrapper{
@@ -290,6 +292,11 @@
             display: flex;
             overflow: auto;
         }
+    }
+
+    .footer{
+        color: white;
+        text-align: center;
     }
 
     .modal{
