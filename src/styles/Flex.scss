@@ -1,0 +1,167 @@
+
+.header{
+    text-align: center;
+    color: white;
+    p{
+        margin-top: -10px;
+    }
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: auto;
+    .flexOptions{
+        width: 30vw;
+        height: 80vh;
+        padding: 5px;
+        margin-left: 10px;
+        border-radius: 5px;
+        background-color: #5f5f5f8e;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        div{
+            width: 45%;
+            margin: auto;
+            color: white;
+
+            input, select{
+                margin-top: 5px;
+                width: 100%;
+                border-radius: 10px;
+                text-align: center;
+                border: 1px solid rgba(255, 255, 255, 0);
+                background-color: rgba(255, 255, 255, 0.726);
+                transition: border .25s ease-in;
+                &:focus{
+                    outline: none;
+                    border: 1px solid #EE2737FF;
+                }
+            }
+        }
+        .btn{
+            margin: auto;
+            width: 45%;
+            height: 50px;
+            border-radius: 10px;
+            border: none;
+            background-color: rgba(238, 39, 56, 0.712);
+            color: white;
+            cursor: pointer;
+
+            &:first-child{
+                background-color: rgba(126, 252, 0, 0.527);
+            }
+
+            &:hover{
+                color: black;
+            }
+        }
+
+        .openModal{
+            background-color: #1b1b1b;
+            &:hover{
+                color: rgba(238, 39, 56, 0.712);
+            }
+        }
+
+    }
+
+    .flexContainer{
+        /* Design of flex-container */
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 5px;
+        width: 70vw;
+        height: 80vh;
+        background-color: #5f5f5f8e;
+        border-radius: 5px;
+
+        /* Divs flex */
+        display: flex;
+        overflow: auto;
+    }
+}
+
+.footer{
+    color: white;
+    text-align: center;
+}
+
+.modal{
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.63);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    button{
+        width: 300px;
+        height: 30px;
+        margin: auto;
+        background-color: rgba(238, 39, 56, 0.712);
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        &:hover{
+            color: black;
+        }
+    }
+
+    .html, .css{
+        margin: auto;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.76);
+        width: 50%;
+        color: white;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 960px) {
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+
+        .flexOptions{
+            width: 90vw;
+            margin: auto;
+        }
+
+        .flexContainer{
+            width: 90vw;
+            margin: auto;
+            margin-top: 30px;
+        }
+    }
+
+    .modal{
+        width: 100vw;
+        height: 120%;
+        background-color: rgba(0, 0, 0, 0.788);
+        button{
+            margin-top: 30px;
+        }
+        .html, .css{
+            width: 95vw;
+        }
+    }
+}
