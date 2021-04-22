@@ -1,22 +1,14 @@
-# flexbox-generator
+# flex-generator
 
-> Vue application to generate flexbox
+> Flex generator
 
-## Build Setup
+Simple flex generator to html and css. It can be usefull for begginers to learn how to use flex in css.
 
-``` bash
-# install dependencies
-npm install
+Application is based on Vue.js, SCSS and Particles.js.
 
-# serve with hot reload at localhost:8080
-npm run dev
+Demo: http://app.pbielanin.pl/flex-generator/
 
-# build for production with minification
-npm run build
+MIT license
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-# vue-flex-generator
+![opera_vdbWzu1a3p](https://user-images.githubusercontent.com/55627799/115793964-6f8bfb00-a3cd-11eb-8758-926ec0e64f15.png)
+![opera_yeFlgrY4py](https://user-images.githubusercontent.com/55627799/115793972-71ee5500-a3cd-11eb-96df-d391a4979989.png)
